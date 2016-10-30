@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <script>
+      if (!window.Promise) document.write('<script src="//github.elemecdn.com/jakearchibald/es6-promise/v3.0.2/dist/es6-promise.min.js"><\/script>');
+      if (!window.fetch) document.write('<script src="//github.elemecdn.com/uglifyjs!github/fetch/v0.11.0/fetch.js"><\/script>'); 
+    </script>
+    <script src="//github.elemecdn.com/YanagiEiichi/reciper/0.1.5/index.es5.js"></script>
+    <script>
+      var ROOT = location.pathname.match(/^\/clouding|$/)[0];
+      reciper({
+        name: 'Clouding',
+        description: '前端「零机器」部署方案',
+        darkColor: '#333',
+        normalColor: '#666',
+        primaryColor: '#000',
+        languages: [ 'xml', 'bash', 'javascript' ],
+        home: ROOT + '/',
+        items: [
+          { 'text': '简介', 'href': ROOT + '/docs/intro/' },
+        ]
+      });
+    </script>
+  </head>
+</html>
